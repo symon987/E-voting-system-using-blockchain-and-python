@@ -1,9 +1,20 @@
+
 <!-- extend base layout -->
 {% extends "base.html" %}
 
 {% block content %}
 <head>    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+<script>
+	function showText() {
+		var textDiv = document.getElementById("textDiv");
+		textDiv.style.display = "block";
+	}
+	function showNextText() {
+    var nextTextDiv = document.getElementById("nextTextDiv");
+    nextTextDiv.style.display = "block";
+}
+	</script>
 	<br>
 	<div style="width:100%">
 	<div style="float: left; width: 70%; height: 200px;">
@@ -34,14 +45,18 @@
 			    <tr>
 			    	<td></td>
 			    	<td>
-			    		<input class='btn btn-primary' type="submit" value="Vote">
+			    		<input class='btn btn-primary' type="submit" value="Vote" onclick="showText()">
 			    	</td>
 			    </tr>
 				</table>
 			</form>
 	<!-- </center> -->
+	<div id="textDiv" style="margin: 30%; border-radius: 10px; height: 80px; position: absolute;  display: none; z-index: 99999999999999999; background-color: rgb(127, 200, 200); width: 20%;">This is the text to show
+		<input class='btn btn-primary' type="button" value="Next" onclick="showNextText()"></div>
 	</div>
-		<div style="float:right; width: 30% ; height: 200px; overflow-y:auto ">
+	<div id="nextTextDiv" style="margin: 30%; border-radius: 10px; height: 80px; position: absolute; display: none; z-index: 999999999999999999; background-color: rgb(127, 200, 200); width: 20%;">This is the next text to show</div>
+
+		<div style=" float:right; width: 30% ; height: 200px; overflow-y:auto ">
 		
 			<table style="width:40%; float: right;">
 				<tr>
