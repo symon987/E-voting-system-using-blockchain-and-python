@@ -6,14 +6,23 @@
 <head>    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <script>
-	function showText() {
-		var textDiv = document.getElementById("textDiv");
-		textDiv.style.display = "block";
-	}
-	function showNextText() {
-    var nextTextDiv = document.getElementById("nextTextDiv");
-    nextTextDiv.style.display = "block";
-}
+// 	function closebtn() {
+// 		var closeall = document.getElementById('nextTextDiv');
+// 		var closeall = document.getElementById('textDiv');
+// 		nextTextDiv.style.display ="none"
+// 		textDiv.style.display ="none"
+// 	}
+
+// 	function showText() {
+// 		var textDiv = document.getElementById("textDiv");
+// 		textDiv.style.display = "block";
+// 	}
+// 	function showNextText() {
+//     var nextTextDiv = document.getElementById("nextTextDiv");
+// 	var buttonclose = document.getElementById("btncls");
+//     nextTextDiv.style.display = "block";
+// 	buttonclose.style.display = "block"
+// }
 	</script>
 	<br>
 	<div style="width:100%">
@@ -51,10 +60,11 @@
 				</table>
 			</form>
 	<!-- </center> -->
-	<div id="textDiv" style="margin: 30%; border-radius: 10px; height: 80px; position: absolute;  display: none; z-index: 99999999999999999; background-color: rgb(127, 200, 200); width: 20%;">This is the text to show
-		<input class='btn btn-primary' type="button" value="Next" onclick="showNextText()"></div>
+	<div id="textDiv" style=" color: white; text-align: center; margin-left: 40%; border-radius: 10px; height: 80px; position: absolute;  display: none; z-index: 3; background-color: rgb(90, 90, 90); width: 20%;">This is the text to show
+		<input style="position: absolute;" class='btn btn-primary' type="button" value="Next" onclick="showNextText()"></div></div>
 	</div>
-	<div id="nextTextDiv" style="margin: 30%; border-radius: 10px; height: 80px; position: absolute; display: none; z-index: 999999999999999999; background-color: rgb(127, 200, 200); width: 20%;">This is the next text to show</div>
+	<div id="nextTextDiv" style="color: white; text-align: center; margin-left: 40%; border-radius: 10px; height: 80px; position: absolute; display: none; z-index: 4; background-color: rgb(90, 90, 90); width: 20%;">This is the next text to show
+		<input id="btncls" style="margin: left 100px; position: absolute; display: none;" class='btn btn-primary' type="button" value="Close" onclick="closebtn()"></div>
 
 		<div style=" float:right; width: 30% ; height: 200px; overflow-y:auto ">
 		

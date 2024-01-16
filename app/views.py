@@ -9,7 +9,7 @@ from app import app
 # The node with which our application interacts, there can be multiple
 # such nodes as well.
 CONNECTED_SERVICE_ADDRESS = "http://127.0.0.1:8000"
-POLITICAL_PARTIES = ["Democratic Party","Republican Party","Socialist party"]
+POLITICAL_PARTIES = ["Allexus Gulleban","Dane Corias","Stephanie Barriga"]
 VOTER_IDS=[
         'VOID001','VOID002','VOID003',
         'VOID004','VOID005','VOID006',
